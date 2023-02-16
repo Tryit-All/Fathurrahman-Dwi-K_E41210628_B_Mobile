@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="7dp">
+
+    <LinearLayout
+        android:paddingVertical="10dp"
+        android:layout_marginVertical="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_image6"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_marginStart="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/bg"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/avatar"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints"
+                    android:elevation="30dp"/>
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bg"
+                    app:layout_constraintEnd_toEndOf="@+id/bg"
+                    app:layout_constraintStart_toStartOf="@+id/bg"
+                    app:layout_constraintTop_toTopOf="@+id/bg"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+<!--            <ImageView-->
+<!--                android:id="@+id/img"-->
+<!--                android:layout_marginStart="20sp"-->
+<!--                android:background="@drawable/avatar"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                />-->
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_alignSelf="center">
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:justifyContent="center"
+                        app:flexDirection="column">
+                        <TextView
+                            android:id="@+id/name_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="15dp"
+                            android:text="June 10"
+                            android:textColor="#000000"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/harga_pcs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="15dp"
+                            android:text="10:00"
+                            android:textColor="#000000"
+                            android:textSize="12dp"
+                            tools:ignore="MissingConstraints" />
+                    </com.google.android.flexbox.FlexboxLayout>
+                </LinearLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10dp">
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:flexDirection="row"
+                app:justifyContent="space_between">
+
+                <LinearLayout
+                    app:layout_flexBasisPercent="60%"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp">
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:flexDirection="row">
+                        <TextView
+                            app:layout_alignSelf="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subtotal : "
+                            android:textColor="#000000"
+                            android:textSize="13dp"/>
+
+                        <TextView
+                            app:layout_alignSelf="center"
+                            android:id="@+id/harga_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="June 10"
+                            android:textColor="#000000"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+                    </com.google.android.flexbox.FlexboxLayout>
+                </LinearLayout>
+                <LinearLayout
+                    app:layout_flexBasisPercent="40%"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20sp">
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:justifyContent="space_between"
+                        app:flexDirection="row">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_alignSelf="center"
+                            android:src="@drawable/trash"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_image5">
+                            <com.google.android.flexbox.FlexboxLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:flexDirection="row"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginVertical="6dp"
+                                app:justifyContent="space_between">
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_alignSelf="center"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:background="@drawable/minus_icon"/>
+                                <TextView
+                                    android:id="@+id/value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_alignSelf="center"
+                                    android:text="10"/>
+                                <ImageButton
+                                    app:layout_alignSelf="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/add_icon"/>
+                            </com.google.android.flexbox.FlexboxLayout>
+                        </LinearLayout>
+                    </com.google.android.flexbox.FlexboxLayout>
+                </LinearLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
