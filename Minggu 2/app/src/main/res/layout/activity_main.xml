@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/B2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/circle"
+        android:src="@color/material_dynamic_neutral0"
+        app:layout_constraintStart_toEndOf="@+id/B1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/B3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="64dp"
+        android:src="@color/black"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toEndOf="@+id/B2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/B4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/circle"
+        android:src="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/B5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/circle"
+        android:src="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/B4"
+        app:layout_constraintTop_toBottomOf="@+id/B2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/B6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="84dp"
+        android:src="@color/black"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toEndOf="@+id/B5"
+        app:layout_constraintTop_toBottomOf="@+id/B3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/B7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/circle"
+        android:src="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/B8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/circle"
+        android:src="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/B7"
+        app:layout_constraintTop_toBottomOf="@+id/B5"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

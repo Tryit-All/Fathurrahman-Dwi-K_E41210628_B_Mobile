@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".TableLayoutActivity">
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_marginVertical="40dp"
+            android:text="LOGIN"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </TableLayout>
+    <TableRow
+        android:layout_marginVertical="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:paddingStart="30dp"
+            android:text="Username : "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_marginEnd="30dp"
+            android:id="@+id/usr"
+            android:paddingStart="10dp"
+            android:paddingEnd="20sp"
+            android:paddingVertical="10dp"
+            android:hint="Isikan Username anda"
+            android:layout_width="wrap_content"
+            android:background="@drawable/field"
+            android:elevation="4dp"/>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:paddingStart="30dp"
+            android:layout_width="wrap_content"
+            android:text="Password : "
+            android:textSize="20sp"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:layout_marginEnd="30dp"
+            android:id="@+id/pswd"
+            android:paddingStart="10dp"
+            android:paddingEnd="20sp"
+            android:paddingVertical="10dp"
+            android:hint="Isikan Password anda"
+            android:layout_width="wrap_content"
+            android:background="@drawable/field"
+            android:elevation="4dp"/>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/l_button"
+            android:layout_width="204dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:text="LOGIN"
+            android:textSize="20dp"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:textColor="#ffff"
+            tools:ignore="MissingConstraints" />
+    </TableRow>
+
+
+</TableLayout>
