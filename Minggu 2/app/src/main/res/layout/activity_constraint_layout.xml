@@ -19,8 +19,6 @@
         tools:context=".ConstraintLayoutActivity"
         tools:ignore="MissingConstraints">
 
-        
-
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="wrap_content"
