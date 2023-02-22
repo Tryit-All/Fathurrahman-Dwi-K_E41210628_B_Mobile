@@ -19,7 +19,7 @@
         tools:context=".ConstraintLayoutActivity"
         tools:ignore="MissingConstraints">
 
-        
+
 
         <ImageView
             android:id="@+id/imageView7"
@@ -67,6 +67,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/button"
+            app:backgroundTint="@color/teal_200"
             style="@style/Widget.MaterialComponents.FloatingActionButton"
             android:text="LOGIN"
             android:textColor="#ffff"
