@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class adapterMahasiswa extends RecyclerView.Adapter<adapterMahasiswa.MahasiswaViewHolder> {
@@ -18,6 +19,9 @@ public class adapterMahasiswa extends RecyclerView.Adapter<adapterMahasiswa.Maha
 
     public adapterMahasiswa(ArrayList<modelRecycle> datalist, Context applicationContext){
         this.datalist = datalist;
+    }
+
+    public adapterMahasiswa(List<modelRecycle> inputData, Context context) {
     }
 
     @NonNull
@@ -37,7 +41,7 @@ public class adapterMahasiswa extends RecyclerView.Adapter<adapterMahasiswa.Maha
 
     @Override
     public int getItemCount() {
-        return datalist.size();
+        return (datalist != null) ? datalist.size() :0;
     }
 
     public class MahasiswaViewHolder extends RecyclerView.ViewHolder{

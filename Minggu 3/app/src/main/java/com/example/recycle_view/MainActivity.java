@@ -2,33 +2,50 @@ package com.example.recycle_view;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    ArrayList<modelRecycle> modelRecycles;
-    RecyclerView recyclerView;
-    private static com.example.recycle_view.adapterMahasiswa adapterMahasiswa;
+    Button btnfirst, btnsecond;
 
+    @SuppressLint("MissingInflatedId")
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recycler_view);
+        setContentView(R.layout.activity_main);
 
-        System.out.println("sini");
-        recyclerView = (RecyclerView) findViewById(R.id.list_recycle);
-        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
-        modelRecycles = new ArrayList<>();
+        btnfirst = (Button) findViewById(R.id.btnFirst);
+        btnsecond = (Button) findViewById(R.id.btnSecond);
+        btnfirst.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadFragment(new RecyclerViewActivity());
+            }
+        });
+        btnsecond.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadFragment(new list_view());
+            }
+        });
+    }
 
-        modelRecycles.add(new modelRecycle("Bayu", "E41210628", "093248290384"));
-        modelRecycles.add(new modelRecycle("Digo", "E34210938", "087423874432"));
-        modelRecycles.add(new modelRecycle("Aufa", "E32321809", "098384273482"));
-        modelRecycles.add(new modelRecycle("Rusli", "E312120", "428390284392"));
-        adapterMahasiswa = new adapterMahasiswa(modelRecycles, this);
-        recyclerView.setAdapter(adapterMahasiswa);
+    private void loadFragment(Fragment fragment){
+        System.out.println(fragment.toString());
+        FragmentManager fm =getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+        fragmentTransaction.replace(R.id.frame_fragment, fragment);
+        fragmentTransaction.commitNow();
     }
 }
