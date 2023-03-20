@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView4"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="24dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:text="Token"-->
+    <!--        android:textColor="#00FFFFFF"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tokentxt2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="24dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:text="token"-->
+    <!--        android:textColor="#00FFFFFF"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/textView4"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.0"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <!--    <View-->
+    <!--        android:id="@+id/view2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="399dp"-->
+    <!--        android:background="@drawable/anu"-->
+    <!--        tools:ignore="MissingConstraints"-->
+    <!--        tools:layout_editor_absoluteX="-3dp"-->
+    <!--        tools:layout_editor_absoluteY="0dp" />-->
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/logo_new" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="163dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="56dp"
+        android:text="Register Account"
+        android:textColor="#301F1F"
+        android:textSize="41dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="120dp"
+        android:layout_marginTop="56dp"
+        android:text="SI Gandrung"
+        android:textColor="#301F1F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="69dp" />
+
+    <View
+        android:id="@+id/whiteBg"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/emailSign"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/field"
+        android:elevation="4dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingStart="20sp"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textColorHint="#A5A5A5"
+        app:layout_constraintBottom_toTopOf="@+id/passSign"
+        app:layout_constraintEnd_toEndOf="@+id/whiteBg"
+        app:layout_constraintStart_toStartOf="@+id/whiteBg"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/passSign"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/field"
+        android:ems="10"
+        android:hint="Password"
+        android:elevation="4dp"
+        android:inputType="textPassword"
+        android:textAlignment="viewStart"
+        android:paddingStart="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#A5A5A5"
+        app:layout_constraintBottom_toTopOf="@+id/s_button"
+        app:layout_constraintEnd_toEndOf="@+id/whiteBg"
+        app:layout_constraintStart_toStartOf="@+id/whiteBg"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/s_button"
+        android:layout_width="316dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/rounded_image"
+        android:text="Register"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteBg"
+        app:layout_constraintEnd_toEndOf="@+id/whiteBg"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/whiteBg"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
