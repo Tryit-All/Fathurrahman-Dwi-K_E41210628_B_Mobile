@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GPS &amp; Akses Sensor</string>
+    <string name="title_proximity_sensor">Sensor Proximity</string>
+    <string name="title_allSensor_sensor">Sensor All Sensor</string>
+    <string name="title_lightSensor_sensor">Sensor Light</string>
+    <string name="map_GPS">GPS</string>
+    <string name="title_mainSensor_sensor">Main Sensor</string>
+    <string name="label_brightness">Level : %1$.2f lux</string>
+    <string name="label_proximity">Object : %1$.2f cm</string>
+</resources>
