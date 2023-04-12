@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSensorActivity">
+
+    <Button
+        android:id="@+id/img_list_all_sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="100dp"
+        android:layout_gravity="center"
+        android:text="List All Sensor"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/img_light_sensor"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/img_list_all_sensor"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="List Light Sensor"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/img_proximity_sensor"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/img_light_sensor"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="List Proximity Sensor"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Sensor | Materi 8" />
+
+</RelativeLayout>
