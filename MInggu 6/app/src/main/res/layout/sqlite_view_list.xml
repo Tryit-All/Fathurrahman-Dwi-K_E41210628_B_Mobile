@@ -1,9 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SqliteViewListActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".SqliteViewListActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="20sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_marginEnd="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor"
+            />
+
+        <TextView
+            android:paddingStart="10dp"
+            android:gravity="center|start"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:id="@+id/Id_list"
+            android:hint="1"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:background="@drawable/field"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            />
+
+        <TextView
+            android:id="@+id/Nama_list"
+            android:paddingStart="10dp"
+            android:gravity="center|start"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:background="@drawable/field"
+            android:hint="1"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Lahir"
+        />
+
+    <TextView
+        android:id="@+id/Tgl_lahir_list"
+        android:paddingStart="10dp"
+        android:gravity="center|start"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/field"
+        android:hint="1"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jenis Kelamin"
+        />
+
+    <TextView
+        android:id="@+id/Jenis_list"
+        android:paddingStart="10dp"
+        android:gravity="center|start"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/field"
+        android:hint="1"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginHorizontal="20sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat"
+        />
+
+    <TextView
+        android:id="@+id/Alamat_list"
+        android:paddingStart="10dp"
+        android:gravity="center|start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/field"
+        android:hint="1"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        />
+</LinearLayout>
+
+<LinearLayout
+    android:paddingVertical="30dp"
+    android:paddingHorizontal="20sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/field"
+            app:backgroundTint="#FF0000"
+            android:text="Back"
+            android:elevation="4dp"
+            android:textStyle="bold" />
+
+</LinearLayout>
+
+
+
+
+
+</LinearLayout>

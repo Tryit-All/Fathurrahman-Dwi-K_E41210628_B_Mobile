@@ -1,9 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SqliteAddDataActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".SqliteAddDataActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="20sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_marginEnd="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor"
+            />
+
+        <EditText
+            android:paddingStart="10dp"
+            android:id="@+id/t1"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:background="@drawable/field"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            />
+
+        <EditText
+            android:paddingStart="10dp"
+            android:id="@+id/t2"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:background="@drawable/field"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Lahir"
+        />
+
+    <EditText
+        android:paddingStart="10dp"
+        android:id="@+id/t3"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/field"
+        />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jenis Kelamin"
+        />
+
+    <EditText
+        android:paddingStart="10dp"
+        android:id="@+id/t4"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/field"
+        />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginHorizontal="20sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat"
+        />
+
+    <EditText
+        android:paddingStart="10dp"
+        android:id="@+id/t5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/field"
+        />
+</LinearLayout>
+
+<LinearLayout
+    android:paddingVertical="30dp"
+    android:paddingHorizontal="20sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_marginEnd="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:background="@drawable/field"
+            app:backgroundTint="#FF0000"
+            android:text="Back"
+            android:elevation="4dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:background="@drawable/field"
+            app:backgroundTint="@color/material_dynamic_primary60"
+            android:text="save"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+</LinearLayout>
